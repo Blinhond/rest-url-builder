@@ -4,7 +4,7 @@ export class RestURLBuilder {
   private namedParameters = {};
   private queryParameters = {};
   private firstQueryInvoked: boolean;
-  private parameterMatcher = /(:\b\D\w*)/g;
+  private parameterMatcher = /(:\b\D[\w\-]*)/g;
 
   constructor() { }
 
